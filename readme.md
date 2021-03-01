@@ -1,6 +1,6 @@
-# Fellow Help server
+# Node.js layout
 
-This project is build with express and typescript.
+This project is for backend. It used node.js, express and typescript. Built with MVC pattern. 
 
 ## Start application
 
@@ -10,15 +10,15 @@ This project is build with express and typescript.
 
 ### Development
 
-    npm start
+    npm run dev
     
 ### Build
 
-    npm run build:app
+    npm run build
     
 ### Start built app
     
-    npm run start:app
+    npm start
     
 ### Migrations
 
