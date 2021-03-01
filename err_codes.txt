@@ -1,0 +1,14 @@
+1062 - [api/register] такой email уже существует
+1044 - [api/login] email не найден
+1043 - [api/login] password не корректен
+1045 - [api/vacant/email] email занят
+1046 - [api/vacant/email] email должен быть в query строке
+
+1102 - [Validator] не валидно
+1103 - [Validator] минимальная длина
+1104 - [Validator] поле обязательно
+1105 - [Validator] максимальная длина
+
+
+
+

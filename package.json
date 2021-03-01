@@ -1,0 +1,41 @@
+{
+  "name": "fellowhelp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "prepare": "node scripts/prepare-env.ci.js",
+    "dev:ci": "npm run prepare && nodemon index.ts",
+    "dev": "nodemon index.ts",
+    "migrate": "node scripts/prepare-sequelize-config.js && NODE_ENV=\"prod\" sequelize-cli db:migrate",
+    "build": "tsc --project ./",
+    "start": "node build/index.js",
+    "debug": "npm run build && node --inspect build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.4"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.7",
+    "@types/express": "^4.17.1",
+    "@types/morgan": "^1.9.1",
+    "@types/node": "^10.17.28",
+    "@types/sequelize": "^4.28.9",
+    "@types/validator": "^13.1.0",
+    "nodemon": "^2.0.4",
+    "sequelize-cli": "^6.2.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
